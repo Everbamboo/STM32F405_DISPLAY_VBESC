@@ -1,23 +1,23 @@
 屏幕硬件连接建议
 屏幕型号：2.0寸 TFT，分辨率176x220，驱动芯片ILI9225，SPI接口
 推荐引脚分配（STM32F405RGT6）：
-oSCK（屏幕时钟）：PA5
-oMOSI（屏幕数据）：PA7
-oMISO（如有）：PA6（可悬空）
-oCS（片选）：PA4
-oRESET：PA1
-oRS/DC（数据/命令）：PA2
-oBL（背光）：PA3（可PWM调节亮度）
-oVCC/GND：3.3V供电，GND接地
+SCK（屏幕时钟）：PA5
+MOSI（屏幕数据）：PA7
+MISO（如有）：PA6（可悬空）
+CS（片选）：PA4
+RESET：PA1
+RS/DC（数据/命令）：PA2
+BL（背光）：PA3（可PWM调节亮度）
+VCC/GND：3.3V供电，GND接地
 
 如需更改引脚，可在 TFT_22_ILI9225 初始化时调整参数。
 
 2. VESC串口连接建议
 推荐使用硬件串口：
-oTX（STM32发送）：PA9（USART1_TX）
-oRX（STM32接收）：PA10（USART1_RX）
-oGND：共地
-o波特率：115200
+TX（STM32发送）：PA9（USART1_TX）
+RX（STM32接收）：PA10（USART1_RX）
+GND：共地
+波特率：115200
 3. 按键/蜂鸣器/LED建议
 按键：PA0、PA8、PB0（均可，建议加上拉电阻）
 蜂鸣器/LED：PC13（或任意空闲GPIO）
@@ -134,4 +134,5 @@ o波特率：115200
 
 - 可根据实际需求定制屏幕内容、风格、单位和语言。
 - 支持扩展蜂鸣器、LED、外部存储等功能。
+
 - 如需更多功能或界面定制，请联系开发者或参考源代码进行修改。
