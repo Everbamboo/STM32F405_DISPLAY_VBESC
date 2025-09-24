@@ -136,3 +136,15 @@ GND：共地
 - 支持扩展蜂鸣器、LED、外部存储等功能。
 
 - 如需更多功能或界面定制，请联系开发者或参考源代码进行修改。
+
+## 八、定制与扩展
+
+固件编译方法：
+sudo apt update
+sudo apt install gcc-arm-none-eabi
+
+你可以直接在项目根目录下使用如下命令编译固件：
+make
+编译成功后，固件文件会生成在 build 目录下，文件名通常为 STM32F405_DISPLAY_VBESC.bin。
+如需清理编译生成的文件，可执行：
+make clean
