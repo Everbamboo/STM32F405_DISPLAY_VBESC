@@ -1,3 +1,5 @@
+备注：目前固件有巨大问题！
+
 屏幕硬件连接建议
 屏幕型号：2.0寸 TFT，分辨率176x220，驱动芯片ILI9225，SPI接口
 推荐引脚分配（STM32F405RGT6）：
@@ -147,4 +149,5 @@ sudo apt install gcc-arm-none-eabi
 make
 编译成功后，固件文件会生成在 build 目录下，文件名通常为 STM32F405_DISPLAY_VBESC.bin。
 如需清理编译生成的文件，可执行：
+
 make clean
